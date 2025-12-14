@@ -1,0 +1,16 @@
+# Tuist generated files
+MovieBrowser.xcodeproj/
+MovieBrowser.xcworkspace/
+
+# Derived data
+Derived/
+DerivedData/
+
+# SwiftPM
+.swiftpm/
+
+# Misc
+.DS_Store
+LocalPackages/MovieBrowserFeature/.build
+LocalPackages/MovieBrowserFeature/.npm-cache
+LocalPackages/Networking/.build

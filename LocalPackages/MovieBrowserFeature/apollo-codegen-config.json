@@ -1,0 +1,25 @@
+{
+  "schemaNamespace": "MovieBrowserAPI",
+  "input": {
+    "operationSearchPaths": [
+      "GraphQL/Operations/**/*.graphql"
+    ],
+    "schemaSearchPaths": [
+      "GraphQL/schema.graphqls"
+    ]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "Sources/MovieBrowserService/API",
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  }
+}

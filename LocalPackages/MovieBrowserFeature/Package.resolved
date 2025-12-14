@@ -1,0 +1,24 @@
+{
+  "originHash" : "4c5af78201ed00e4dfe4cd3088d81b0a96ea191d62d9114ddaf92e3a3c14c787",
+  "pins" : [
+    {
+      "identity" : "apollo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apollographql/apollo-ios.git",
+      "state" : {
+        "revision" : "1abd62f6cbc8c1f4405919d7eb6cd8e96967b07c",
+        "version" : "1.25.3"
+      }
+    },
+    {
+      "identity" : "youtubeplayerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SvenTiigi/YouTubePlayerKit.git",
+      "state" : {
+        "revision" : "1ae827573024ab13dd6adea33b25d3eef6ff667c",
+        "version" : "2.0.5"
+      }
+    }
+  ],
+  "version" : 3
+}

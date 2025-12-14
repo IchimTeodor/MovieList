@@ -1,0 +1,26 @@
+{
+  "configurations" : [
+    {
+      "id" : "59E86298-0186-4CFD-AD04-AEF8762DF4F7",
+      "name" : "Default",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "language" : "en",
+    "region" : "US"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MovieBrowser.xcodeproj",
+        "identifier" : "F88BBCF39B8087A6C3998C31",
+        "name" : "MovieBrowserTests"
+      }
+    }
+  ],
+  "version" : 1
+}

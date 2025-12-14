@@ -1,0 +1,77 @@
+query TopMovies($page: Int, $perPage: Int, $format: MediaFormat = MOVIE) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo {
+      currentPage
+      hasNextPage
+    }
+    media(format: $format, sort: SCORE_DESC) {
+      id
+      title {
+        romaji
+        english
+      }
+      averageScore
+      genres
+      coverImage {
+        extraLarge
+        large
+      }
+      isFavourite
+      format
+      startDate {
+        year
+      }
+      endDate {
+        year
+      }
+    }
+  }
+}
+
+query MovieDetailInfo($id: Int, $type: MediaType = ANIME) {
+  Media(id: $id, type: $type) {
+    id
+    title {
+      romaji
+      english
+    }
+    description
+    averageScore
+    meanScore
+    genres
+    duration
+    bannerImage
+    countryOfOrigin
+    isFavourite
+    isAdult
+    trailer {
+      id
+      site
+    }
+  }
+}
+
+query MovieDetailExtras($id: Int, $type: MediaType = ANIME) {
+  Media(id: $id, type: $type) {
+    id
+    characters(perPage: 8, sort: [ROLE, RELEVANCE, ID]) {
+      edges {
+        role
+        node {
+          id
+          name {
+            full
+          }
+          image {
+            large
+          }
+        }
+        voiceActors(language: JAPANESE, sort: [RELEVANCE, ID]) {
+          name {
+            full
+          }
+        }
+      }
+    }
+  }
+}
